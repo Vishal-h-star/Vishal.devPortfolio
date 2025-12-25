@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FiMenu, FiX, FiDownload } from "react-icons/fi";
-import ModeToggle from "../toggle/ModeToggle";
+import ModeToggle from "../Toggle/ModeToggle";
 import NavLinkButton from "../UI/NavLinkButton";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
