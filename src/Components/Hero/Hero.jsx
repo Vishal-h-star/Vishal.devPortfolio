@@ -17,7 +17,7 @@ const Hero = () => {
       variants={heroVariants}
       initial="hidden"
       animate="visible"
-      className="flex min-h-[80vh]  flex-col justify-center mx-auto px-8 max-w-5xl "
+      className="flex min-h-[80vh]  flex-col justify-center mx-auto px-8  max-w-5xl "
     >
       <h1 className="text-4xl md:text-6xl font-medium leading-tight">
         I design and build <br />

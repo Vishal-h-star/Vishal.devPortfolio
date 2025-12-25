@@ -58,17 +58,7 @@ const Navbar = () => {
 
         {/* Mobile actions */}
         <div className="flex items-center gap-3 md:hidden">
-          {/* Mobile Resume (PRIMARY & FOCUSED) */}
-          <a
-            href="/resume.pdf"
-            download
-            className="flex items-center gap-2 rounded-lg bg-[var(--primary)]
-                       px-4 py-2 text-sm font-medium text-black
-                       active:scale-95 transition"
-          >
-            <FiDownload size={16} />
-            Resume
-          </a>
+   
 
           {/* Mode toggle always visible */}
           <ModeToggle />
@@ -87,7 +77,8 @@ const Navbar = () => {
       {/* Mobile Menu (links only) */}
       {open && (
         <div className="md:hidden border-t border-white/10 bg-black/80 backdrop-blur-md">
-          <div className="flex flex-col gap-4 px-6 py-6 text-sm">
+          <div className="flex flex-col gap-5 px-6 py-8 text-sm">
+            {/* Navigation Links */}
             <NavLinkButton href="#projects" onClick={() => setOpen(false)}>
               Projects
             </NavLinkButton>
@@ -100,6 +91,22 @@ const Navbar = () => {
             <NavLinkButton href="#contact" onClick={() => setOpen(false)}>
               Contact
             </NavLinkButton>
+
+            {/* Divider */}
+            <div className="my-2 h-px w-full bg-white/10" />
+
+            {/* Resume – FULL WIDTH PRIMARY CTA */}
+            <a
+              href="/resume.pdf"
+              download
+              className="mt-2 flex w-full items-center justify-center gap-2
+                   rounded-lg bg-[var(--primary)] px-4 py-3
+                   text-sm font-medium text-black
+                   active:scale-95 transition"
+            >
+              <FiDownload size={16} />
+              Download Resume
+            </a>
           </div>
         </div>
       )}

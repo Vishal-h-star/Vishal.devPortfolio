@@ -11,7 +11,7 @@ const Skills = () => {
   const { mode } = useMode();
 
   return (
-    <section className="max-w-5xl mx-auto px-8 py-24">
+    <section id="skills" className="max-w-5xl mx-auto px-8 py-24">
       {/* Header */}
       <div className="mb-12">
         <h2 className="text-3xl md:text-4xl font-medium">Skills</h2>

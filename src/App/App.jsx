@@ -10,20 +10,23 @@ import Projects from "../Sections/Projects/Projects";
 import Skills from "../Sections/Skills/Skills";
 import Architecture from "../Sections/Architecture/Architecture";
 import Footer from "../Components/Layout/Footer";
+import Contact from "../Sections/Contact/Contact";
 
 const App = () => {
   return (
     <div className="min-h-screen bg-[var(--bg)]  text-white">
       <Navbar />
-      <Hero />
-      <HowIBuild/>
-      <Skills/>
-      <Projects/>
-      <Architecture/>
-      <Footer/>
+      <main className="pt-24">
+        <Hero />
+        <HowIBuild />
+        <Skills />
+        <Projects />
+        <Architecture />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 };
-
 
 export default App;
