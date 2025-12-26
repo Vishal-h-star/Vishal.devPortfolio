@@ -12,7 +12,7 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState("frontend");
 
   return (
-    <section  id="projects" className="max-w-6xl mx-auto px-8 py-24">
+    <section  id="projects" className="max-w-6xl mx-auto px-8 md:px-16  xl:px-8 py-16">
       {/* Header */}
       <div className="mb-12">
         <h2 className="text-3xl md:text-4xl font-medium">Projects</h2>

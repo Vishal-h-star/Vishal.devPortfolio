@@ -18,7 +18,7 @@ const Hero = () => {
       initial="hidden"
       animate="visible"
       id="home"
-      className="flex min-h-[80vh]  flex-col justify-center mx-auto px-8  max-w-6xl "
+      className="flex min-h-[80vh]  flex-col justify-center mx-auto px-8  md:px-16  xl:px-8 max-w-6xl "
     >
       <h1 className="text-4xl md:text-6xl font-medium leading-tight">
         I design and build <br />

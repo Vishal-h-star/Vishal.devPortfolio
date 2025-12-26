@@ -10,7 +10,7 @@ const Architecture = () => {
   const current = decisions.find((d) => d.key === active);
 
   return (
-    <section id="architecture" className="relative mx-auto m-auto max-w-6xl px-8  lg:px-12 xl:px- py-20">
+    <section id="architecture" className="relative mx-auto m-auto max-w-6xl px-8  md:px-16 xl:px-8 py-16">
       {/* Header */}
       <div className="mb-16 max-w-3xl">
         <h2 className="text-4xl md:text-5xl font-medium">

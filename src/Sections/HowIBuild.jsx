@@ -22,7 +22,7 @@ const rowVariants = {
 const HowIBuild = () => {
   return (
     <Reveal>
-      <section className="max-w-6xl mx-auto px-8 py-24">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 xl:px-8 py-24">
         <h2 className="text-3xl md:text-4xl font-medium">
           How I build interfaces
         </h2>

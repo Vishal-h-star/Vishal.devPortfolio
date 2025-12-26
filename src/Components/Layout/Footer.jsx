@@ -3,7 +3,7 @@ import FooterIcon from "../UI/FooterIcon";
 const Footer = () => {
   return (
     <footer className="relative mt-32 border-t border-white/10 bg-[var(--surface)]">
-      <div className="mx-auto max-w-7xl px-8 py-20">
+      <div className="mx-auto max-w-7xl px-8  md:px-16  xl:px-8 py-20">
         
         {/* Main content */}
         <div className="grid gap-12 md:grid-cols-2">
