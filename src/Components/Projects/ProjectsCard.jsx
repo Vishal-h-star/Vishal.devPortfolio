@@ -60,15 +60,15 @@ const ProjectCard = ({ project }) => {
             className="mt-4 space-y-3 text-sm text-[var(--muted)]"
           >
             <p>
-              <span className="text-white font-medium">Problem:</span>
+              <span className="text-white font-medium">Problem:&nbsp;&nbsp;</span>
               {project.problem}
             </p>
             <p>
-              <span className="text-white font-medium">Approach:</span>
+              <span className="text-white font-medium">Approach:&nbsp;&nbsp;</span>
               {project.approach}
             </p>
             <p>
-              <span className="text-white font-medium">Learnings:</span>
+              <span className="text-white font-medium">Learnings:&nbsp;&nbsp;</span>
               {project.learnings}
             </p>
           </motion.div>
@@ -76,31 +76,61 @@ const ProjectCard = ({ project }) => {
       </AnimatePresence>
 
       {/* 3️⃣ Tech stack */}
-      <div className="mt-5 text-sm text-[var(--muted)]">{project.tech}</div>
-
+      <div className="mt-5 text-sm text-[var(--primary)]">{project.tech}</div>
       {/* 4️⃣ Actions */}
-      <div className="mt-6 flex items-center gap-3">
-        {!isInProgress ? (
+      {/* 4️⃣ Actions */}
+      <div className="mt-6 flex flex-wrap items-center gap-3">
+        {project.status !== "in-progress" ? (
           <>
-            {project.live && (
-              <button
+            {project.liveLink && (
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-lg border border-white/15 px-3 py-2 text-sm
-                           text-[var(--muted)] hover:border-white/30 hover:text-white transition"
+                     text-[var(--muted)] hover:border-white/30 hover:text-white transition"
               >
                 <FiExternalLink size={16} />
                 Live
-              </button>
+              </a>
             )}
 
-            {project.code && (
-              <button
-                className="flex items-center gap-2 rounded-lg border border-white/15 px-3 py-2 text-sm
-                           text-[var(--muted)] hover:border-white/30 hover:text-white transition"
-              >
-                <FiGithub size={16} />
-                Code
-              </button>
-            )}
+            {project.repoLink &&
+              (typeof project.repoLink === "string" ? (
+                <a
+                  href={project.repoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 rounded-lg border border-white/15 px-3 py-2 text-sm
+                       text-[var(--muted)] hover:border-white/30 hover:text-white transition"
+                >
+                  <FiGithub size={16} />
+                  Code
+                </a>
+              ) : (
+                <>
+                  <a
+                    href={project.repoLink.frontend}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 rounded-lg border border-white/15 px-3 py-2 text-sm
+                         text-[var(--muted)] hover:border-white/30 hover:text-white transition"
+                  >
+                    <FiGithub size={16} />
+                    Frontend
+                  </a>
+                  <a
+                    href={project.repoLink.backend}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 rounded-lg border border-white/15 px-3 py-2 text-sm
+                         text-[var(--muted)] hover:border-white/30 hover:text-white transition"
+                  >
+                    <FiGithub size={16} />
+                    Backend
+                  </a>
+                </>
+              ))}
           </>
         ) : (
           <span className="text-[var(--muted)] italic">Currently building</span>

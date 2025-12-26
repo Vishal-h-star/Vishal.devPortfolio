@@ -24,21 +24,21 @@ const Footer = () => {
           <div className="flex md:justify-end">
             <div className="flex gap-4">
               <FooterIcon
-                href="https://github.com/yourusername"
+                href="https://github.com/Vishal-h-star"
                 label="GitHub"
               >
                 <FiGithub size={18} />
               </FooterIcon>
 
               <FooterIcon
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/vishal-chauhan0001/"
                 label="LinkedIn"
               >
                 <FiLinkedin size={18} />
               </FooterIcon>
 
               <FooterIcon
-                href="mailto:your@email.com"
+                href="mailto:vishalchauhan163067@gmail.com"
                 label="Email"
               >
                 <FiMail size={18} />
