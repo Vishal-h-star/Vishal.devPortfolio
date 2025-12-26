@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="mx-auto max-w-7xl px-8  md:px-16  xl:px-8 py-32"
+      className="mx-auto max-w-7xl px-8  md:px-16  xl:px-8 py-20"
     >
       {/* Header – LEFT ALIGNED */}
       <div className="mb-16 max-w-3xl">
