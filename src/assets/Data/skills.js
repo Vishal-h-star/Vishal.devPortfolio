@@ -1,44 +1,82 @@
-export const frontendSkills = [
+export  const frontendSkills = [
   {
-    name: "React",
-    desc: "Component-based UI, hooks, context API, and reusable layout patterns.",
+    title: "UI & Components",
+    recruiter: ["Component-driven UI", "Reusable layouts"],
+    desc:
+      "Build reusable React components with clear responsibility.\nStructure UI by separating layout, logic, and presentation.",
   },
   {
-    name: "JavaScript",
-    desc: "ES6+, async/await, array methods, basic DOM logic, and clean code practices.",
+    title: "Styling & Layout",
+    recruiter: ["Tailwind CSS", "Responsive design"],
+    desc:
+      "Use Tailwind CSS for consistent spacing, typography, and layout.\nDesign mobile-first interfaces that adapt cleanly across screens.",
   },
   {
-    name: "Tailwind CSS",
-    desc: "Utility-first styling, responsive layouts, and consistent design systems.",
+    title: "State & Data Handling",
+    recruiter: ["React Hooks", "Context API"],
+    desc:
+      "Manage local state using React hooks.\nShare global state with Context API only when required.",
   },
   {
-    name: "HTML & CSS",
-    desc: "Semantic HTML, layout structuring, and accessible markup.",
+    title: "UX & Accessibility",
+    recruiter: ["Semantic HTML", "Mobile-first UI"],
+    desc:
+      "Write semantic HTML to improve structure and accessibility.\nFocus on clarity, usability, and predictable interactions.",
+  },
+  {
+    title: "Internationalization",
+    recruiter: ["i18next", "RTL / LTR support"],
+    desc:
+      "Implement i18next for multi-language support.\nHandle RTL and LTR layouts without breaking UI structure.",
   },
 ];
+
 
 export const backendSkills = [
   {
-    name: "Node.js",
-    desc: "Building REST APIs, handling requests, and backend logic.",
+    title: "API Development",
+    recruiter: ["REST APIs", "CRUD operations"],
+    desc:
+      "Build RESTful APIs using Node.js and Express.\nDesign clear endpoints for create, read, update, and delete flows.",
   },
   {
-    name: "Express.js",
-    desc: "Routing, middleware usage, and authentication flows.",
+    title: "Authentication & Authorization",
+    recruiter: ["JWT auth", "Role-based access"],
+    desc:
+      "Implement authentication using JWT tokens.\nProtect routes with middleware and basic role checks.",
   },
   {
-    name: "MongoDB",
-    desc: "Schema design, CRUD operations, and data modeling basics.",
+    title: "Database & Models",
+    recruiter: ["MongoDB", "Mongoose"],
+    desc:
+      "Design schemas and models using Mongoose.\nHandle relationships and validations at the model level.",
+  },
+  {
+    title: "Backend Structure",
+    recruiter: ["MVC structure", "Middleware"],
+    desc:
+      "Organize backend code using controllers, routes, and middleware.\nKeep logic modular and easy to maintain.",
   },
 ];
 
+
 export const toolsSkills = [
   {
-    name: "Git & GitHub",
-    desc: "Version control, branching, and pushing clean commits.",
+    title: "Version Control",
+    recruiter: ["Git", "GitHub"],
+    desc:
+      "Use Git for version control and collaboration.\nManage branches, commits, and pull requests on GitHub.",
   },
   {
-    name: "Postman",
-    desc: "Testing APIs and validating request/response flows.",
+    title: "Development Workflow",
+    recruiter: ["Vite", "npm"],
+    desc:
+      "Use Vite for fast local development.\nManage dependencies and scripts using npm.",
+  },
+  {
+    title: "Deployment",
+    recruiter: ["Vercel", "Environment variables", "netlify"],
+    desc:
+      "Deploy frontend applications using Vercel.\nConfigure environment variables for different environments.",
   },
 ];

@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Brand */}
         <span className="text-lg font-semibold tracking-wide">
-          vishal<span className="text-[var(--primary)]">.dev</span>
+           <a href="#home"> vishal<span className="text-[var(--primary)]">.dev</span></a>
         </span>
 
         {/* Desktop links */}
@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Desktop Resume (outlined) */}
           <a
             href="/resume.pdf"
-            download
+            download="vishal_resume2025"
             className="group flex items-center gap-2 rounded-lg border border-white/20
                        px-4 py-2 text-sm text-white
                        hover:border-[var(--primary)] hover:text-[var(--primary)]

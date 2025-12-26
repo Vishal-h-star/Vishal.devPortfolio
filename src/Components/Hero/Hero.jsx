@@ -17,7 +17,8 @@ const Hero = () => {
       variants={heroVariants}
       initial="hidden"
       animate="visible"
-      className="flex min-h-[80vh]  flex-col justify-center mx-auto px-8  max-w-5xl "
+      id="home"
+      className="flex min-h-[80vh]  flex-col justify-center mx-auto px-8  max-w-6xl "
     >
       <h1 className="text-4xl md:text-6xl font-medium leading-tight">
         I design and build <br />
@@ -38,7 +39,7 @@ const Hero = () => {
           transition={{ duration: 0.2 }}
           className="rounded-lg bg-[var(--primary)] px-6 py-3 text-black font-medium hover:opacity-90 transition"
         >
-          View Work
+           <a href="#projects">View Work</a>
         </motion.button>
         <motion.button
           whileHover={{ scale: 1.03 }}

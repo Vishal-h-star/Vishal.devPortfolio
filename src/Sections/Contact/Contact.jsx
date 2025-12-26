@@ -44,8 +44,9 @@ const Contact = () => {
                                rounded-full border border-white/15">
                 <FiMail />
               </span>
-              <span className="text-[var(--muted)]">
-                vishal@example.com
+              <span 
+              className="text-[var(--muted)]">
+               <a href="mailto:vishalchauhan163067@gmail.com"> vishalchauhan163067@gmail.com</a>
               </span>
             </div>
 
@@ -55,7 +56,7 @@ const Contact = () => {
                 <FiPhone />
               </span>
               <span className="text-[var(--muted)]">
-                +91 9XXXXXXXXX
+                +91 8368110019
               </span>
             </div>
           </div>
