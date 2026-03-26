@@ -39,8 +39,8 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-4">
           {/* Desktop Resume (outlined) */}
           <a
-            href="/resume.pdf"
-            download="vishal_resume2025"
+            href="/Resume_vishalSinghChauhan_2026.pdf"
+            download="vishal_resume2026"
             className="group flex items-center gap-2 rounded-lg border border-white/20
                        px-4 py-2 text-sm text-white
                        hover:border-[var(--primary)] hover:text-[var(--primary)]
